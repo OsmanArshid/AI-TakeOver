@@ -21,9 +21,9 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${
-        !top ? 'bg-white dark:bg-gray-900 shadow-lg' : 'bg-transparent'
-      }`}
-    >
+        !top ? 'bg-white dark:bg-gray-900 shadow-lg' : 'bg-white dark:bg-gray-800'
+      }`} >
+      
       <div className="flex flex-row justify-between items-center py-2">
         <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
           <HashLink smooth to="/">
