@@ -11,6 +11,8 @@ import {
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
+import Toggledark from './pages/Toggledark'; 
+
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -42,6 +44,7 @@ function App() {
             <Route path="/get-demo" element={<DemoProduct />} /> 
           </Routes>
         </ScrollToTop>
+        <Toggledark />
       </Router>
     </>
   );
