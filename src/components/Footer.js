@@ -12,7 +12,7 @@ const Footer = () => {
 
             {/* 1st block */}
             <div className="col-span-12 custom-lg:col-span-4">
-              <div className="box-border border-b-4 border-blue-900 dark:border-blue-500 p-8 bg-gray-200 dark:bg-gray-800 text-[#21314f] dark:text-gray-100 text-center rounded-lg xl:w-80 mx-auto">
+              <div className="box-border border-b-4 border-blue-900 dark:border-blue-500 p-8 bg-gray-200 dark:bg-gray-700 text-[#21314f] dark:text-gray-100 text-center rounded-lg xl:w-80 mx-auto">
                 <h3 className="font-bold text-4xl mb-4">AI TakeOver</h3>
               </div>
             </div>
@@ -104,7 +104,7 @@ const Footer = () => {
                   href="https://github.com/OsmanArshid"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-black dark:text-cyan-300 hover:text-cyan-300 dark:hover:text-pink-400">
+                  className="text-black dark:text-cyan-300 hover:text-cyan-300 dark:hover:text-white">
                   Made by Osman
                 </a>
               </div>

@@ -73,12 +73,12 @@ const DemoProduct = (props) => {
             <div>
                 <NavBar />
             </div>
-            <div id="demo" className="flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24">
+            <div id="demo" className="flex justify-center items-center mt-8 w-full bg-white dark:bg-gray-900 py-12 lg:py-24">
                 <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
                     <form onSubmit={sendEmail} id="demoProductForm">
-                        <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                        <div className="w-full bg-white dark:bg-gray-800 dark:text-gray-100 p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                             <div className="flex">
-                                <h1 className="font-bold text-center lg:text-left text-[#21314f] uppercase text-4xl">
+                                <h1 className="font-bold text-center lg:text-left text-[#21314f] dark:text-white uppercase text-4xl">
                                     Demo our Projects
                                 </h1>
                             </div>
@@ -86,11 +86,11 @@ const DemoProduct = (props) => {
                                 <input
                                     id="checkbox-1"
                                     type="checkbox"
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
+                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-700 dark:border-gray-600"
                                     value="Twitter Bot for Cryptocurrency Trends"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">
+                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">
                                     Twitter Bot for Cryptocurrency Trends
                                 </label>
                             </div>
@@ -98,11 +98,11 @@ const DemoProduct = (props) => {
                                 <input
                                     id="checkbox-2"
                                     type="checkbox"
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
+                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-700 dark:border-gray-600"
                                     value="Reinforcement Learning Optimization in Agricultural Technology"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="checkbox-2" className="ml-3 text-lg font-medium text-gray-900">
+                                <label htmlFor="checkbox-2" className="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">
                                     Reinforcement Learning Optimization in Agricultural Technology
                                 </label>
                             </div>
@@ -110,26 +110,14 @@ const DemoProduct = (props) => {
                                 <input
                                     id="checkbox-3"
                                     type="checkbox"
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
+                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-700 dark:border-gray-600"
                                     value="Legal Chatbot for Pakistani Law"
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="checkbox-3" className="ml-3 text-lg font-medium text-gray-900">
+                                <label htmlFor="checkbox-3" className="ml-3 text-lg font-medium text-gray-900 dark:text-gray-300">
                                     Legal Chatbot for Pakistani Law
                                 </label>
                             </div>
-                            {/* <div className="flex items-center my-4">
-                                <input
-                                    id="checkbox-4"
-                                    type="checkbox"
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="proj4"
-                                    onChange={handleChange}
-                                />
-                                <label htmlFor="checkbox-4" className="ml-3 text-lg font-medium text-gray-900">
-                                    Proj4
-                                </label>
-                            </div> */}
                             {errors.products && (
                                 <p className="text-red-500 text-sm">{errors.products}</p>
                             )}
@@ -142,7 +130,7 @@ const DemoProduct = (props) => {
                                 <div>
                                     <input
                                         name="first_name"
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                        className="w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                         type="text"
                                         placeholder="First Name*"
                                         value={firstName}
@@ -156,7 +144,7 @@ const DemoProduct = (props) => {
                                 <div>
                                     <input
                                         name="last_name"
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                        className="w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                         type="text"
                                         placeholder="Last Name*"
                                         value={lastName}
@@ -170,7 +158,7 @@ const DemoProduct = (props) => {
                                 <div>
                                     <input
                                         name="email"
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                        className="w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                         type="email"
                                         placeholder="Email*"
                                         value={email}
@@ -184,7 +172,7 @@ const DemoProduct = (props) => {
                                 <div>
                                     <input
                                         name="phone_number"
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                        className="w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                         type="number"
                                         placeholder="Phone*"
                                         value={phone}
@@ -200,7 +188,7 @@ const DemoProduct = (props) => {
                                 <textarea
                                     name="message"
                                     placeholder="Message*"
-                                    className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                    className="w-full h-32 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     onKeyUp={clearErrors}
@@ -213,7 +201,7 @@ const DemoProduct = (props) => {
                                 <button
                                     type="submit"
                                     id="submitBtn"
-                                    className="uppercase text-sm font-bold tracking-wide bg-[#21314f] hover:bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                                    className="uppercase text-sm font-bold tracking-wide bg-[#21314f] hover:bg-blue-900 text-gray-100 dark:text-white p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
                                 >
                                     Send Message
                                 </button>

@@ -2,10 +2,10 @@ import React from 'react';
 
 const Clients = () => {
   return (
-    <div className="mt-8 bg-gray-100 dark:bg-gray-900 py-12">
+    <div className=" bg-gray-100 dark:bg-gray-900 py-12">
       <section data-aos="fade-up">
-        <div className="my-4 py-4">
-          <h2 className="my-2 text-center text-3xl text-[#21314f] dark:text-gray-100 uppercase font-bold">
+        <div className="my-3 py-4">
+          <h2 className="text-center text-3xl text-[#21314f] dark:text-gray-100 uppercase font-bold">
             Reviews
           </h2>
           <div className="flex justify-center">

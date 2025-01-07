@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
           <div
             className="flex custom-lg:justify-end w-full custom-lg:w-1/2"
-            //data-aos="fade-up"
+            data-aos="fade-up"
             data-aos-delay="700" >
             <img alt="card img" className=" rounded-t float-right duration-1000 w-full" src={heroImg} />
           </div>
